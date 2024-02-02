@@ -1,4 +1,6 @@
+/* App.css */
 .App {
+  position: relative; /* Set position to relative for z-index to work */
   display: flex;
   height: 100vh;
   margin: 0;
@@ -6,15 +8,16 @@
 
 .drawing-area {
   position: absolute;
-  width: 100vw; /* Stretch horizontally to cover the viewport width */
-  height: 100vh; /* Stretch vertically to cover the viewport height */
-  background-color: lightgreen; /* You can change the color here */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(144, 238, 144, 0.5); /* Light green with 50% opacity */
+  z-index: 2; /* Set z-index to position the drawing area above the panel */
 }
 
 .dot {
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: blue; /* You can change the color here */
+  background-color: blue;
   border-radius: 50%;
 }
