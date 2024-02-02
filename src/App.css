@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.drawing-area {
+  position: absolute;
+  width: 100vw; /* Stretch horizontally to cover the viewport width */
+  height: 100vh; /* Stretch vertically to cover the viewport height */
+  background-color: lightgreen; /* You can change the color here */
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: blue; /* You can change the color here */
+  border-radius: 50%;
+}
