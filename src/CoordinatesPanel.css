@@ -4,8 +4,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
-    color: white; /* White text */
+    background-color: rgba(200, 200, 200, 0.7); /* Black background with 70% opacity */
+    color: black; /* White text */
     padding: 10px;
     border-radius: 5px
   

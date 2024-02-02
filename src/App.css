@@ -10,14 +10,14 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(144, 238, 144, 0.5); /* Light green with 50% opacity */
+  background-color: rgba(144, 238, 144, 0.2); /* Light green with 50% opacity */
   z-index: 2; /* Set z-index to position the drawing area above the panel */
 }
 
 .dot {
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   background-color: blue;
   border-radius: 50%;
 }
