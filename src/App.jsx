@@ -5,13 +5,19 @@ function App() {
   const [dots, setDots] = useState([])
 
   const handleDrawing = (e) => {
+    if (e.buttons !== 1) return // Check if the left mouse button is clicked (buttons: 1)
+
     const newDot = { x: e.clientX, y: e.clientY }
     setDots((prevDots) => [...prevDots, newDot])
   }
 
   return (
-    <div className="App" onMouseMove={handleDrawing}>
-      <div className="drawing-area">
+    <div className="App">
+      <div
+        className="drawing-area"
+        onMouseMove={handleDrawing}
+        onMouseDown={handleDrawing}
+      >
         {dots.map((dot, index) => (
           <div
             key={index}
